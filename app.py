@@ -41,4 +41,7 @@ if st.button("Predict Rating"):
         st.error("Please enter a review before predicting the rating.")
     else:
         output = predict_text_rating(user_input)
-        st.write(f"Predicted Rating: {output[0]}")  # Output[0] to unpack the numpy array
+        if output[0] <= 2:
+            st.write(f"Predicted Rating: {output[0]} 👎")  # Output[0] to unpack the numpy array and thumbs-down emoji
+        else:
+            st.write(f"Predicted Rating: {output[0]} 👍")  # Output[0] to unpack the numpy array and thumbs-up emoji
