@@ -4,7 +4,7 @@
 
 ## Description
 
-The Sentiment and Text Classification for Product Rating Optimization App is a web application that revolutionizes e-commerce product ratings, leveraging deep insights from customer reviews to ensure a more accurate and trustworthy representation of product quality. The model is trained on comments data users have given and it has been preprocessed to ensure better predictions. The app has been deployed on Streamlite.
+The Sentiment and Text Classification for Product Rating Optimization App is a web application that revolutionizes e-commerce product ratings, leveraging deep insights from customer reviews to ensure a more accurate and trustworthy representation of product quality. The model is trained on comments data users have given and it has been preprocessed to ensure better predictions. The app has been deployed on Streamlite. Here[https://drive.google.com/file/d/1vJLKe8ahDObe6aATvkZo_Xja7d_FVIIG/view?usp=sharing] is how the app works.
 
 Note: Deployed version on the web page [Here](https://product-rating-prediction.streamlit.app/)
 
