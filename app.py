@@ -33,9 +33,12 @@ def predict_text_rating(text_input):
     return predicted_rating
 
 # Streamlit app interface
-st.title("Product Rating Prediction")
-user_input = st.text_area("Enter your review text:", "Type Here")
+st.write("### Enter your review text below to predict the product rating:")
+user_input = st.text_area("Review Text", placeholder="Type here...")
+
 if st.button("Predict Rating"):
-    output = predict_text_rating(user_input)
-    st.write(f"Predicted Rating: {output[0]}")  # Output[0] to unpack the numpy array
-    
+    if not user_input:  # Check if user_input is empty
+        st.error("Please enter a review before predicting the rating.")
+    else:
+        output = predict_text_rating(user_input)
+        st.write(f"Predicted Rating: {output[0]}")  # Output[0] to unpack the numpy array
