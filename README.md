@@ -35,14 +35,13 @@ To run the project locally, there is a need to have Visual Studio Code (vs code)
 1. Clone the project 
 
 ``` bash
-git clone https://github.com/UmuhireJessie/product-rating-prediction.git
-
+git clone https://github.com/natleynyamu/TextClassification.git
 ```
 
 2. Open the project with vs code
 
 ``` bash
-cd product-rating-prediction
+cd TextClassification
 code .
 ```
 
@@ -63,7 +62,7 @@ streamlit run app.py
 
 ## Model Files
 
-- lstm_model.h5: The main sentiment and text classification for product rating optimization model trained on customer' comments data.
+- lstm_model.h5: The main sentiment and text classification for product rating optimization model trained on customer's comments data.
 - tokenizer.pkl: The tokenizer used for preprocessing the text comment.
 
 ## Authors and Acknowledgment
